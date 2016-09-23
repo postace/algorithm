@@ -26,7 +26,9 @@ public class Metals {
         int total_cost = 0;
         
         for (int i = 1; i < max_rods_length; i++) {
+            // number of cut we need
             int num_of_cut = 0;
+            // cost each rod we traverse
             int current_cost = 0;
             for (int rod : rods) {
                 if (rod%i == 0) {
